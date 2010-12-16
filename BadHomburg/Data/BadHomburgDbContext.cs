@@ -34,9 +34,9 @@ namespace BadHomburg.Data
         {
             base.Seed(dbContext);
 
-            dbContext.Personen.Add(new Person {Anrede = "Herr", Nachname = "Weinert", Vorname = "Albert"});
-            dbContext.Personen.Add(new Person {Anrede = "Frau", Nachname = "Schmitz", Vorname = "Verena"});
-            dbContext.Personen.Add(new Person {Anrede = "Herr", Nachname = "Lange", Vorname = "Stefan"});
+            dbContext.Personen.Add(new Person {Anrede = "Herr", Nachname = "Weinert", Vorname = "Albert", Geburtsjahr=1981});
+            dbContext.Personen.Add(new Person {Anrede = "Frau", Nachname = "Schmitz", Vorname = "Verena", Geburtsjahr=1974});
+            dbContext.Personen.Add(new Person {Anrede = "Herr", Nachname = "Lange", Vorname = "Stefan", Geburtsjahr=1999});
             dbContext.SaveChanges();
         }
     }

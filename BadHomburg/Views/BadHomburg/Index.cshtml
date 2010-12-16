@@ -1,6 +1,5 @@
 ﻿@{
     ViewBag.Title = "Index";
-    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
 <h2>Index</h2>
@@ -10,11 +9,10 @@
 <p>Willkommen bei der ersten eigenen MVC Seite</p>
 
 <ul>
-@Url.Action("About", "Home")
 
 <li>@Html.ActionLink("Details","Details")</li>
 <li>@Html.ActionLink("Personen","List")</li>
 <li>@Html.ActionLink("Erstellen","Create")</li>
-<li>@Html.ActionLink("Startseite","Index","Home")</li>
+<li><a href="@Url.Action("Index", "Home")">Startseite</a></li>
 
 </ul>

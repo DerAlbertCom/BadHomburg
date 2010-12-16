@@ -9,17 +9,12 @@
 <fieldset>
     <legend>Person</legend>
 
-    <div class="display-label">Anrede</div>
-    <div class="display-field">@Model.Anrede</div>
+    @Html.DisplayForModel()
 
-    <div class="display-label">Vorname</div>
-    <div class="display-field">@Model.Vorname</div>
-
-    <div class="display-label">Nachname</div>
-    <div class="display-field">@Model.Nachname</div>
 </fieldset>
 <p>
-    @Html.ActionLink("Edit", "Edit", new { /* id=Model.PrimaryKey */ }) |
-    @Html.ActionLink("Back to List", "Index")
+    @Html.ActionLink("Edit", "Edit", new { Model.Id }) |
+    @Html.ActionLink("Back to List", "List")
+   
 </p>
 
